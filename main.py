@@ -1,7 +1,6 @@
-from cpf_cnpj import Documento
+from datetime import datetime, timedelta
+from datas_br import DatasBr
 
-exemplo_cnpj = "09984950000172"
-exemplo_cpf = "38774596845"
-
-documento = Documento.cria_documento(exemplo_cnpj)
-print(documento)
+cadastro = DatasBr()
+print(cadastro.mes_cadastro())
+print(cadastro.dia_semana())
