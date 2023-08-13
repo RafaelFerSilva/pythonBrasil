@@ -1,6 +1,9 @@
 from datetime import datetime, timedelta
 from datas_br import DatasBr
 
-cadastro = DatasBr()
-print(cadastro.mes_cadastro())
-print(cadastro.dia_semana())
+# hoje = datetime.today()
+# amanha = datetime.today() + timedelta(days=1, hours=20)
+# print(amanha - hoje)
+
+hoje = DatasBr()
+print(hoje.tempo_cadastro())
