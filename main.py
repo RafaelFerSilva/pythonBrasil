@@ -1,9 +1,6 @@
-from datetime import datetime, timedelta
-from datas_br import DatasBr
+from acesso_cep import BuscaEndereco
 
-# hoje = datetime.today()
-# amanha = datetime.today() + timedelta(days=1, hours=20)
-# print(amanha - hoje)
+cep = 25870145
+objeto_cep = BuscaEndereco(cep)
+print(objeto_cep)
 
-hoje = DatasBr()
-print(hoje.tempo_cadastro())
